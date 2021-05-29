@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+
+
+<script src="index.js"> </script>
+
+    <title>Smart-Fit</title>
+
+</head>
+                                    <!--            Body            -->
+<body onload="timer()">
+
+  <header>
+    <img src="img/logo.svg" alt="logo" class="logo">
+  </header>
+  
+  <section class="article">
+    
+    <div class="avatar">
+       
+      <img id="myImage" src="img/black.png" alt="">
+
+      <p id="time" style="font-family: Orbitron;" ></p>
+
+      <img id="heart" src="img/heart.png" alt="">
+      <span id="heart-rate">78</span>
+    </div>
+
+     <div id="info">
+
+        <h1 class="title" style="font-family: Montserrat;">FitBit 6 - The Smartest Watch</h1>
+
+      <p class="description" style="font-family: Source Sans Pro;">
+        Your body can stand almost anything. It’s your mind that you have to convince.
+      </p>
+
+    <h3 class="section">Select Color</h3>
+
+    <ul class="colors">
+
+      <li class="black" onclick="document.getElementById('myImage').src='img/black.png'"></li>
+      <li class="red" onclick="document.getElementById('myImage').src='img/red.png'"></li>
+      <li class="blue" onclick="document.getElementById('myImage').src='img/blue.png'" ></li>
+      <li class="brown" onclick="document.getElementById('myImage').src='img/brown.png'" ></li>
+      <li class="pink" onclick="document.getElementById('myImage').src='img/pink.png'" ></li>
+
+    </ul>
+
+    <h3 class="section">Features</h3>
+
+    <ul class="options">
+        <li><a onclick="timer()">Time</a></li>
+        <li><a onclick="heartbeat()">Heart Rate</a></li>
+    </ul>
+
+    <button class="buy">
+        BUY NOW
+    </button>
+
+</div>
+
+</section>   
+
+</body>
+</html>
